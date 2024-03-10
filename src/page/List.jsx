@@ -1,9 +1,12 @@
-export default function Add() {
+import { useSelector } from "react-redux";
+
+function List() {
+    const pages = useSelector((state) => state.pages);
     return (
         <div className="form">
             <div className="form-content">
                 <ul>
-                    {pages?.map((todo) => (
+                    {pages?.map((page) => (
                         <li key={page.phone}>
                             <p>{page.name}</p>
                             <p>{page.surname}</p>
@@ -16,3 +19,4 @@ export default function Add() {
         </div>
     );
 }
+export default List;
