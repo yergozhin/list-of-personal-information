@@ -6,13 +6,14 @@
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
+    position: relative;
 }
 .addButton{
     top: 67%;
     left: 49.3%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    position: absolute;
+    position: fixed;
     border-radius: 50%;
     padding-top: 34px;
     padding-left: 9px;
@@ -37,7 +38,7 @@
     left: 69.8%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    position: absolute;
+    position:fixed;
     border-radius: 50%;
     padding-top: 69px;
     padding-left: 35px;
@@ -46,7 +47,38 @@
     background-color: black;
     color:aliceblue;
     border: none;
+    text-align: center;
 }
 .listButton:hover {
     background-color: #7d7e7d;
+}
+.pgbutton {
+    padding: 15px 25px;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+.pgbutton:hover {
+    background-color: #7f807f;
+}
+.pgbutton:active {
+    background-color: #4e4d4d;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+.form {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form-content{
+    display: flex;
+    flex-direction: column;
+}
+.form-content input {
+    border-radius: 15px;
+    padding: 15px 25px;
+    margin-bottom: 7px;
+    font-size: medium;
 }

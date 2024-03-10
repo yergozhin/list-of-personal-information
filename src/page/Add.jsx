@@ -35,7 +35,7 @@ export default function Add() {
                 <input value={name} onChange={handleNameChange} type="text" name="name" placeholder="First Name"/>
                 <input value={surname} onChange={handleSurnameChange} type="text" name="surname" placeholder="Last Name"/>
                 <input value={phone} onChange={handlePhoneChange} type="text" name="phonenumber" placeholder="Phone Number"/>
-                <button onClick={onSave}>
+                <button onClick={onSave} className="pgbutton">
                     Save
                 </button>
             </div>
