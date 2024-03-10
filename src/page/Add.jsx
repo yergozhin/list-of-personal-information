@@ -1,11 +1,16 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { UseDispatch,useDispatch,useSelector } from "react-redux";
+import { addPage } from "../Actions/action";
+import { useState } from "react";
 
 export default function Add() {
 
     const [name, setName] = useState("")
     const [surname, setSurname] = useState("")
     const [phone, setPhone] = useState("")
+    const pages = useSelector((state) => state.pages);
+    const dispatch = useDispatch();
 
     const navigateTo = useNavigate();
 
@@ -20,10 +25,10 @@ export default function Add() {
     const handlePhoneChange = (event) => {
         setPhone(event.target.value);
     }
-
     const onSave = () => {
         if (!name || !surname || !phone) return;
-        navigateTo("/");
+        dispatch(addPage(name,surname,phone));
+        //navigateTo("/");
     }
 
     return (
