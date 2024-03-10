@@ -8,7 +8,7 @@ import { createStore } from 'redux';
 import { persistStore, persistReducer } from 'redux-persist';
 import storage from 'redux-persist/lib/storage'; // defaults to localStorage for web
 
-import rootReducer from './Reducers/reducer'; // your root reducer
+import rootReducer from './Reducers/reducer'; // root reducer
 
 const persistConfig = {
   key: 'root',
