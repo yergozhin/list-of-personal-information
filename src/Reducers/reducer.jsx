@@ -1,4 +1,4 @@
-import { ADD_PAGE } from "../Actions/action";
+import { ADD_PAGE, DELETE_PAGE } from "../Actions/action";
 
 const initialState = {
     pages: [],
@@ -15,6 +15,10 @@ const reducer = (state = initialState, action) => {
                         phone: action.payload.phone
                     }
                 ]
+            }
+        case DELETE_PAGE:
+            return{
+                pages: [...state.pages.filter(page => page.phone !== action.payload)]
             }
         default:
             return state;
