@@ -47,6 +47,9 @@ function List() {
     return (
         <div className="form">
             <div className="form-content">
+                <input value={name} onChange={handleNameChange} type="text" name="name" placeholder="First Name"/>
+                <input value={surname} onChange={handleSurnameChange} type="text" name="surname" placeholder="Last Name"/>
+                <input value={phone} onChange={handlePhoneChange} type="text" name="phonenumber" placeholder="Phone Number"/>
                 <ul>
                     {pages?.map((page) => (
                         <p key={page.phone}>
@@ -55,9 +58,6 @@ function List() {
                             <p>{page.phone}</p>
                             <button onClick= {() => dispatch(deletePage(page.phone))}>Delete</button>
                             <div>
-                            <input value={name} onChange={handleNameChange} type="text" name="name" placeholder="First Name"/>
-                            <input value={surname} onChange={handleSurnameChange} type="text" name="surname" placeholder="Last Name"/>
-                            <input value={phone} onChange={handlePhoneChange} type="text" name="phonenumber" placeholder="Phone Number"/>
                             <button onClick={() => onUpdate(page)}>
                                 Update
                             </button>
