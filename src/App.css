@@ -1,1 +1,52 @@
-
+.navigation-menu{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("BlackHole.jpeg");
+    background-size: 1440px;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.addButton{
+    top: 67%;
+    left: 49.3%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 50%;
+    padding-top: 34px;
+    padding-left: 9px;
+    padding-right: 8px;
+    padding-bottom: 44px;
+    background-color: rgb(2, 2, 2);
+    color:aliceblue;
+    border: none;
+    text-align: center;
+    transform: rotate(-11deg);
+}
+/*.addButton:active {
+    background-color: #f6f5f5;
+    box-shadow: 0 5px #040404;
+    transform: translateY(4px);
+}*/
+.addButton:hover {
+    background-color: #7d7e7d;
+}
+.listButton{
+    top: 68.0%;
+    left: 69.8%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 50%;
+    padding-top: 69px;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-bottom: 40px;
+    background-color: black;
+    color:aliceblue;
+    border: none;
+}
+.listButton:hover {
+    background-color: #7d7e7d;
+}

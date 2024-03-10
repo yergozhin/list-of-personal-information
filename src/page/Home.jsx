@@ -11,10 +11,10 @@ export default function Home() {
     }
     return (
         <div className="navigation-menu">
-            <button onClick={addPage}>
+            <button onClick={addPage} className="addButton">
                 Add page
             </button>
-            <button onClick={listPage}>
+            <button onClick={listPage} className="listButton">
                 List page
             </button>
         </div>
