@@ -12,10 +12,10 @@ export default function Home() {
     return (
         <div className="navigation-menu">
             <button onClick={addPage} className="addButton">
-                Add page
+                Volunteer
             </button>
             <button onClick={listPage} className="listButton">
-                List page
+                View List
             </button>
         </div>
     );

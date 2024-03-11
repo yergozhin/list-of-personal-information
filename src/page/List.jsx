@@ -56,8 +56,8 @@ function List() {
                             <p>{page.name}</p>
                             <p>{page.surname}</p>
                             <p>{page.phone}</p>
-                            <button onClick= {() => dispatch(deletePage(page.phone))}>Delete</button>
                             <div>
+                            <button onClick= {() => dispatch(deletePage(page.phone))}>Delete</button>
                             <button onClick={() => onUpdate(page)}>
                                 Update
                             </button>
