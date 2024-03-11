@@ -45,10 +45,12 @@ function List() {
         navigateTo("/");
     }
     return (
-        <div>
+        <div className="formList">
+            <div className="inputUpdate">
             <input value={name} onChange={handleNameChange} type="text" name="name" placeholder="First Name"/>
             <input value={surname} onChange={handleSurnameChange} type="text" name="surname" placeholder="Last Name"/>
             <input value={phone} onChange={handlePhoneChange} type="text" name="phonenumber" placeholder="Phone Number"/>
+            </div>
             <div className="people">
                 <ul>
                     {pages?.map((page) => (
@@ -62,6 +64,7 @@ function List() {
                                 Update
                             </button>
                             </div>
+                            <div className="line"></div>
                         </p>
                     )
                     )}

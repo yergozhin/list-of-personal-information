@@ -101,5 +101,28 @@
     }
   }
 .person{
-    background-color: aqua;
+    width: 1200px;
+    background-repeat: no-repeat;
+    color: white;
 }
+.formList {
+    width: 100vw;
+    height: 100vh;
+    align-items: center top;
+    justify-content: center;
+    background-image: url("b211ac486827ce3c3203febe2c03bd69.jpg");
+    background-size: 1440px;
+    background-repeat: repeat;
+    display: grid;
+    position: sticky;
+    overflow: auto;
+}
+.people{
+    display: flex;
+    flex-direction: column;
+}
+.line {
+    height: 1px;
+    background-color: rgb(248, 245, 245);
+    margin: 5px 0; 
+  }
