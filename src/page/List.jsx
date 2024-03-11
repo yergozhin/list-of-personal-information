@@ -46,13 +46,13 @@ function List() {
     }
     return (
         <div>
-            <div>
-                <input value={name} onChange={handleNameChange} type="text" name="name" placeholder="First Name"/>
-                <input value={surname} onChange={handleSurnameChange} type="text" name="surname" placeholder="Last Name"/>
-                <input value={phone} onChange={handlePhoneChange} type="text" name="phonenumber" placeholder="Phone Number"/>
+            <input value={name} onChange={handleNameChange} type="text" name="name" placeholder="First Name"/>
+            <input value={surname} onChange={handleSurnameChange} type="text" name="surname" placeholder="Last Name"/>
+            <input value={phone} onChange={handlePhoneChange} type="text" name="phonenumber" placeholder="Phone Number"/>
+            <div className="people">
                 <ul>
                     {pages?.map((page) => (
-                        <p key={page.phone}>
+                        <p key={page.phone} className="person">
                             <p>{page.name}</p>
                             <p>{page.surname}</p>
                             <p>{page.phone}</p>

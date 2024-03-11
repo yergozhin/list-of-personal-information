@@ -100,3 +100,6 @@
       transform: rotate(360deg);
     }
   }
+.person{
+    background-color: aqua;
+}
