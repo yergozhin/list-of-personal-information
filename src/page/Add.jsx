@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { addPage } from "../Actions/action";
+import ufo from "../ufo-seeklogo.svg"
 
 export default function Add() {
 
@@ -32,6 +33,7 @@ export default function Add() {
     return (
         <div className="form">
             <div className="form-content">
+                <img src={ufo} className="App-logo" alt="logo" />
                 <input value={name} onChange={handleNameChange} type="text" name="name" placeholder="First Name"/>
                 <input value={surname} onChange={handleSurnameChange} type="text" name="surname" placeholder="Last Name"/>
                 <input value={phone} onChange={handlePhoneChange} type="text" name="phonenumber" placeholder="Phone Number"/>

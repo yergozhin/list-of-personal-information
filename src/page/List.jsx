@@ -45,8 +45,8 @@ function List() {
         navigateTo("/");
     }
     return (
-        <div className="form">
-            <div className="form-content">
+        <div>
+            <div>
                 <input value={name} onChange={handleNameChange} type="text" name="name" placeholder="First Name"/>
                 <input value={surname} onChange={handleSurnameChange} type="text" name="surname" placeholder="Last Name"/>
                 <input value={phone} onChange={handlePhoneChange} type="text" name="phonenumber" placeholder="Phone Number"/>
