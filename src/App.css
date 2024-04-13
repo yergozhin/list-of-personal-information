@@ -9,7 +9,7 @@
     position: relative;
 }
 .addButton{
-    top: 67%;
+    top: 70%;
     left: 49.3%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
@@ -34,8 +34,8 @@
     background-color: #7d7e7d;
 }
 .listButton{
-    top: 68.0%;
-    left: 69.8%;
+    top: 71.2%;
+    left: 72.3%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     position:fixed;
